@@ -1,0 +1,16 @@
+<div id="login-container">
+  <div class="centered-wrapper">
+    <div class="single-row">
+      <input type="text" id="ejabbex-login-username" class="field" placeholder="Username">
+      <input type="text" id="ejabbex-login-host" class="field" placeholder="Host">
+    </div>
+    <input type="password" id="ejabbex-login-password" class="field" placeholder="Password">
+    <input type="submit" id="ejabbex-login-submit" class="button" value="Login">
+  </div>
+
+  <span id="login-error"><b>Error</b>: cannot login. Please try later.</span>
+
+  <span class="info">
+    <b>Powered by:</b> Elixir&Phoenix, Ejabberd and Elixible
+  </span>
+</div>
