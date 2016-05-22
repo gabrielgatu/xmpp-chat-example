@@ -1,0 +1,33 @@
+.chat-send {
+  height: 35px;
+  padding: 16px;
+  position: relative;
+  background-color: #fafafa;
+
+  .field {
+    width: 80%;
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    padding: 8px 16px;
+    font-size: 16px;
+    outline: none;
+    border: 0;
+    background-color: #fafafa;
+  }
+
+  .button {
+    position: absolute;
+    right: 32px;
+    line-height: 35px;
+    background: #fafafa;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    color: #2980b9;
+
+    &:active {
+      color: #194D6F;
+    }
+  }
+}

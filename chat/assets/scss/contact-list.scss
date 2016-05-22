@@ -1,0 +1,38 @@
+$primary: rgb(90, 70, 150);
+
+.contact {
+  padding: 16px 16px;
+  border-bottom: 1px solid #f3f3f3;
+  cursor: pointer;
+  transition: .15s linear;
+
+  &:hover,
+  &.selected {
+    background-color: #f3f3f3;
+    border-left: 7px solid $primary;
+  }
+
+  .avatar {
+    width: 32px;
+    height: 32px;
+    background-image: url("../../assets/images/avatar.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    float: left;
+    margin-right: 16px;
+  }
+
+  .username {
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    color: #2980b9;
+  }
+
+  .status {
+    font-size: 13px;
+    margin-top: 8px;
+    display: block;
+    color: #2c3e50;
+  }
+}

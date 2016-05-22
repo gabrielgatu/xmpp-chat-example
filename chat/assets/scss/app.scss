@@ -1,0 +1,72 @@
+$contact-list-width: 280px;
+$primary: rgb(90, 70, 150);
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+.header {
+  background-color: $primary;
+
+  .title {
+    padding-left: 16px;
+    line-height: 70px;
+    font-size: 18px;
+    color: #fff;
+  }
+
+  &.light {
+    background-color: #f3f3f3;
+
+    .title {
+      color: #555;
+    }
+  }
+}
+
+#contact-list-container {
+  width: $contact-list-width;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+
+  #contact-list {
+    width: $contact-list-width - 1px;
+    height: 100%;
+    overflow-y: auto;
+    border-right: 1px solid #f3f3f3;
+    background-color: #fafafa;
+  }
+}
+
+#chat-container {
+  position: fixed;
+  top: 0;
+  left: $contact-list-width;
+  right: 0;
+  bottom: 70px;
+  z-index: 1;
+
+  #chat {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+  }
+}
+
+#chat-send {
+  position: absolute;
+  bottom: 0;
+  left: $contact-list-width;
+  right: 0;
+  border-top: 1px solid #f3f3f3;
+  z-index: 2;
+}
